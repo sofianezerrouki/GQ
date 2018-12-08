@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="484.0" prefWidth="750.0" stylesheets="@../../ressource/dark-theme.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestion_commerciale.client.FXMLDocumentController">
+   <children>
+      <JFXButton fx:id="btnClient" layoutX="292.0" layoutY="59.0" onAction="#clientBtn" prefHeight="25.0" prefWidth="166.0" ripplerFill="#6e6868" text="Client" />
+      <JFXButton layoutX="292.0" layoutY="117.0" onAction="#produitBtn" prefHeight="25.0" prefWidth="166.0" text="Produit" />
+      <JFXButton layoutX="292.0" layoutY="176.0" onAction="#fournisseureBtn" prefHeight="25.0" prefWidth="166.0" text="Fournisseure" />
+      <JFXButton layoutX="292.0" layoutY="242.0" onAction="#commandeBtn" prefHeight="25.0" prefWidth="166.0" ripplerFill="#6e6868" text="Commande" />
+      <JFXButton layoutX="292.0" layoutY="300.0" onAction="#reglementBtn" prefHeight="25.0" prefWidth="166.0" text="Reglement" />
+      <JFXButton layoutX="292.0" layoutY="359.0" onAction="#factureBtn" prefHeight="25.0" prefWidth="166.0" text="Facture" />
+      <AnchorPane layoutY="-2.0" prefHeight="46.0" prefWidth="750.0" style="-fx-background-color: #589589;">
+         <children>
+            <Label layoutX="14.0" layoutY="4.0" prefHeight="39.0" prefWidth="245.0" text="GESTION COMMERCIALE " textFill="#ffeb0f" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
