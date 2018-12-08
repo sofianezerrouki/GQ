@@ -12,58 +12,52 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class ClientController implements Initializable {
-    
-    
+public class ClientController {
+
     @FXML
     private JFXButton nouveau;
-        @FXML
+    @FXML
     private JFXButton modifier;
-    
+
     @FXML
-    void modifier(ActionEvent event) {
-        Parent mainView = null;
-            try {
-                mainView = FXMLLoader.load(getClass().getResource("/client/manupilerClient/ModifierClient.fxml"));
-            } catch(IOException ioe) {
-                ioe.printStackTrace();
-            }
-            
-            Stage mStage = (Stage) modifier.getScene().getWindow();
-           //load main fenetre
-            mStage.setScene(new Scene(mainView));
+    private void modifier() {
+        Parent modifierClientView = null;
+        try {
+            modifierClientView = FXMLLoader.load(getClass().getResource("/com/sofianezerrouki/gestion_commercial/gui/client/manupilerClient/ModifierClient.fxml"));
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
+        }
+
+        Stage mStage = (Stage) modifier.getScene().getWindow();
+        //load main fenetre
+        mStage.setScene(new Scene(modifierClientView));
     }
 
     @FXML
-    void nouveau(ActionEvent event) {
-        Parent mainView = null;
-            try {
-                mainView = FXMLLoader.load(getClass().getResource("/client/manupilerClient/AjouterClient.fxml"));
-            } catch(IOException ioe) {
-                ioe.printStackTrace();
-            }
-            
-            Stage mStage = (Stage) nouveau.getScene().getWindow();
-           //load main fenetre
-            mStage.setScene(new Scene(mainView));
+    private void nouveau() { // New Client
+        Parent ajouterClientView = null;
+        try {
+            ajouterClientView = FXMLLoader.load(getClass().getResource("/com/sofianezerrouki/gestion_commercial/gui/client/manupilerClient/AjouterClient.fxml"));
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
+        }
+
+        Stage mStage = (Stage) nouveau.getScene().getWindow();
+        //load main fenetre
+        mStage.setScene(new Scene(ajouterClientView));
     }
 
     @FXML
-    void supprimer(ActionEvent event) {
-        Parent mainView = null;
-            try {
-                mainView = FXMLLoader.load(getClass().getResource("/client/manupilerClient/SupprimerClient.fxml"));
-            } catch(IOException ioe) {
-                ioe.printStackTrace();
-            }
-            
-            Stage mStage = (Stage) nouveau.getScene().getWindow();
-           //load main fenetre
-            mStage.setScene(new Scene(mainView));
-    }
-    
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        
+    private void supprimer() { // Delete Client
+        Parent supprimerClientView = null;
+        try {
+            supprimerClientView = FXMLLoader.load(getClass().getResource("/com/sofianezerrouki/gestion_commercial/gui/client/manupilerClient/SupprimerClient.fxml"));
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
+        }
+
+        Stage mStage = (Stage) nouveau.getScene().getWindow();
+        //load main fenetre
+        mStage.setScene(new Scene(supprimerClientView));
     }
 }

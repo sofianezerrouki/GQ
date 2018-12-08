@@ -16,46 +16,43 @@ public class SystemController implements Initializable {
     
     @FXML
     private JFXButton btnClient;
+    
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        // TODO
+    }
+    
     @FXML
-    void clientBtn(ActionEvent event) {
-        Parent mainView = null;
-            try {
-                mainView = FXMLLoader.load(getClass().getResource("/client/Client.fxml"));
+    private void clientBtn() {
+        Parent clientView = null;
+            try { // Get Client FXML
+                clientView = FXMLLoader.load(getClass().getResource("/com/sofianezerrouki/gestion_commercial/gui/client/Client.fxml"));
             } catch(IOException ioe) {
                 ioe.printStackTrace();
             }
             
             Stage mStage = (Stage) btnClient.getScene().getWindow();
-           //load main fenetre
-            mStage.setScene(new Scene(mainView));
+           // load client FXML to window
+            mStage.setScene(new Scene(clientView));
     }
 
     @FXML
-    void commandeBtn(ActionEvent event) {
-
-    }
-
-    @FXML
-    void factureBtn(ActionEvent event) {
+    private void commandeBtn() {
 
     }
 
     @FXML
-    void fournisseureBtn(ActionEvent event) {
-        Parent mainView = null;
-            try {
-                mainView = FXMLLoader.load(getClass().getResource("/fournisseure/Fournisseure.fxml"));
-            } catch(IOException ioe) {
-                ioe.printStackTrace();
-            }
-            
-            Stage mStage = (Stage) btnClient.getScene().getWindow();
-           //load main fenetre
-            mStage.setScene(new Scene(mainView));
+    private void factureBtn() {
+
     }
 
     @FXML
-    void produitBtn(ActionEvent event) {
+    private void fournisseureBtn() {
+        
+    }
+
+    @FXML
+    private void produitBtn() {
         Parent mainView = null;
             try {
                 mainView = FXMLLoader.load(getClass().getResource("/produit/Produit.fxml"));
@@ -69,13 +66,8 @@ public class SystemController implements Initializable {
     }
 
     @FXML
-    void reglementBtn(ActionEvent event) {
+    private void reglementBtn() {
 
     }
-    
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
     
 }

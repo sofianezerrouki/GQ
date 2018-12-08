@@ -10,7 +10,7 @@ public class Gestion_commerciale extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/com/sofianezerrouki/gestion_commercial/gui/login/Login.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/com/sofianezerrouki/gestion_commercial/gui/client/manupilerClient/AjouterClient.fxml"));
 
         Scene scene = new Scene(root);
 
