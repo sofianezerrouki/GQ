@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="593.0" prefWidth="805.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sofianezerrouki.gestion_commercial.gui.client.manupilerClient.AjouterClientController">
+   <children>
+      <HBox layoutX="-2.0" layoutY="524.0" prefHeight="69.0" prefWidth="808.0" style="-fx-background-color: #589589;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="69.0" prefWidth="823.0">
+               <children>
+                  <JFXButton layoutX="26.0" layoutY="22.0" onAction="#onSave" prefHeight="38.0" prefWidth="108.0" style="-fx-background-color: #AAEE00;" text="Enregistrer">
+                     <font>
+                        <Font size="16.0" />
+                     </font></JFXButton>
+                  <JFXButton layoutX="157.0" layoutY="22.0" onAction="#onVider" prefHeight="38.0" prefWidth="108.0" style="-fx-background-color: #77FF55;" text="Vider">
+                     <font>
+                        <Font size="16.0" />
+                     </font></JFXButton>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <HBox layoutX="-1.0" layoutY="69.0" prefHeight="456.0" prefWidth="808.0">
+         <children>
+            <AnchorPane prefHeight="314.0" prefWidth="269.0">
+               <children>
+                  <JFXTextField fx:id="societe" labelFloat="true" layoutX="22.0" layoutY="14.0" prefHeight="60.0" prefWidth="226.0" promptText="SOCIETE">
+                     <padding>
+                        <Insets top="30.0" />
+                     </padding>
+                     <font>
+                        <Font name="Batang" size="16.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="nomclient" labelFloat="true" layoutX="22.0" layoutY="155.0" prefHeight="60.0" prefWidth="226.0" promptText="NOM CLIENT">
+                     <padding>
+                        <Insets top="30.0" />
+                     </padding>
+                     <font>
+                        <Font name="Batang" size="16.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="prenomclient" labelFloat="true" layoutX="22.0" layoutY="226.0" prefHeight="60.0" prefWidth="226.0" promptText="PRENOM CLIENT">
+                     <padding>
+                        <Insets top="30.0" />
+                     </padding>
+                     <font>
+                        <Font name="Batang" size="16.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="adresse" labelFloat="true" layoutX="22.0" layoutY="296.0" prefHeight="60.0" prefWidth="226.0" promptText="ADRESSE CLIENT">
+                     <padding>
+                        <Insets top="30.0" />
+                     </padding>
+                     <font>
+                        <Font name="Batang" size="16.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="codepostale" labelFloat="true" layoutX="22.0" layoutY="365.0" prefHeight="60.0" prefWidth="226.0" promptText="CODE POSTALE">
+                     <padding>
+                        <Insets top="30.0" />
+                     </padding>
+                     <font>
+                        <Font name="Batang" size="16.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="civilite" labelFloat="true" layoutX="21.0" layoutY="87.0" prefHeight="60.0" prefWidth="226.0" promptText="CIVILITE">
+                     <padding>
+                        <Insets top="30.0" />
+                     </padding>
+                     <font>
+                        <Font name="Batang" size="16.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="314.0" prefWidth="269.0">
+               <children>
+                  <JFXTextField fx:id="ville" labelFloat="true" layoutX="22.0" layoutY="84.0" prefHeight="60.0" prefWidth="226.0" promptText="VILLE">
+                     <padding>
+                        <Insets top="30.0" />
+                     </padding>
+                     <font>
+                        <Font name="Batang" size="16.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="telephone" labelFloat="true" layoutX="22.0" layoutY="153.0" prefHeight="60.0" prefWidth="226.0" promptText="TELEPHONE">
+                     <padding>
+                        <Insets top="30.0" />
+                     </padding>
+                     <font>
+                        <Font name="Batang" size="16.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="mobile" labelFloat="true" layoutX="22.0" layoutY="224.0" prefHeight="60.0" prefWidth="226.0" promptText="MOBILE">
+                     <padding>
+                        <Insets top="30.0" />
+                     </padding>
+                     <font>
+                        <Font name="Batang" size="16.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="fax" labelFloat="true" layoutX="22.0" layoutY="297.0" prefHeight="60.0" prefWidth="226.0" promptText="FAX">
+                     <padding>
+                        <Insets top="30.0" />
+                     </padding>
+                     <font>
+                        <Font name="Batang" size="16.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="email" labelFloat="true" layoutX="22.0" layoutY="367.0" prefHeight="60.0" prefWidth="226.0" promptText="EMAIL">
+                     <padding>
+                        <Insets top="30.0" />
+                     </padding>
+                     <font>
+                        <Font name="Batang" size="16.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="pays" labelFloat="true" layoutX="31.0" layoutY="17.0" prefHeight="60.0" prefWidth="226.0" promptText="PAYS">
+                     <padding>
+                        <Insets top="30.0" />
+                     </padding>
+                     <font>
+                        <Font name="Batang" size="16.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="314.0" prefWidth="269.0">
+               <children>
+                  <JFXCheckBox fx:id="fmadresse" layoutX="17.0" layoutY="78.0" prefHeight="52.0" prefWidth="226.0" text="FACTURER MEME ADRESSE">
+                     <font>
+                        <Font name="Batang" size="14.0" />
+                     </font>
+                  </JFXCheckBox>
+                  <JFXCheckBox fx:id="lmadresse" layoutX="17.0" layoutY="130.0" prefHeight="52.0" prefWidth="226.0" text="LIVRER MEME ADRESSE">
+                     <font>
+                        <Font name="Batang" size="14.0" />
+                     </font>
+                  </JFXCheckBox>
+                  <JFXCheckBox fx:id="exempt" layoutX="17.0" layoutY="182.0" prefHeight="52.0" prefWidth="226.0" text="EXEMPT TVA">
+                     <font>
+                        <Font name="Batang" size="14.0" />
+                     </font>
+                  </JFXCheckBox>
+                  <JFXTextArea fx:id="observations" labelFloat="true" layoutX="9.0" layoutY="250.0" prefHeight="169.0" prefWidth="253.0" promptText="Observations">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </JFXTextArea>
+                  <JFXTextField fx:id="type" labelFloat="true" layoutX="20.0" layoutY="14.0" prefHeight="60.0" prefWidth="226.0" promptText="TYPE">
+                     <padding>
+                        <Insets top="30.0" />
+                     </padding>
+                     <font>
+                        <Font name="Batang" size="16.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <HBox layoutY="-3.0" prefHeight="69.0" prefWidth="805.0" style="-fx-background-color: #589589;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label prefHeight="75.0" prefWidth="233.0" text="GESTION COMMERCIALE : FICHE CLIENT" textFill="#ffeb0f">
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Label>
+            <Label prefHeight="76.0" prefWidth="267.0" style="-fx-background-color: #486e67;" text="ENREGISTREMENT D'UN NOUVEAU CLIENT" textAlignment="CENTER" textFill="#ff9f84" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

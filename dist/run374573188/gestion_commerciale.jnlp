@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="gestion_commerciale.jar" size="25003" download="eager" />
+    <jar href="gestion_commerciale.jar" size="21071" download="eager" />
     <jar href="lib\fontawesomefx-commons-8.15.jar" size="20957" download="eager" />
     <jar href="lib\fontawesomefx-controls-8.15.jar" size="3369" download="eager" />
     <jar href="lib\fontawesomefx-emojione-2.2.7-2.jar" size="3642164" download="eager" />
