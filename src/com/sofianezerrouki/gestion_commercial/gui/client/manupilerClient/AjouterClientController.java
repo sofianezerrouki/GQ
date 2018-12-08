@@ -60,7 +60,7 @@ public class AjouterClientController implements Initializable {
         Client client = new Client(societe.getText(), civilite.getText(), nomclient.getText(), prenomclient.getText(),
         adresse.getText(), codepostale.getText(), ville.getText(), pays.getText(), telephone.getText(), mobile.getText(),
         fax.getText(), email.getText(),(type.getText() == null || type.getText().isEmpty()) ? 0 : Integer.parseInt(type.getText()), lmadresse.isSelected(), fmadresse.isSelected(),
-        exempt.isSelected(), "Sofiane", new Date(), "Sofiane", new Date(), observations.getText());
+        exempt.isSelected(), ConnectionDB.user, new Date(), ConnectionDB.user, new Date(), observations.getText());
         
         boolean isInserted = ClientDao.addClient(client);
         

@@ -6,6 +6,9 @@ import java.sql.SQLException;
 
 public class ConnectionDB {
 
+    // User connected 
+    public static String user;
+    
     public static Connection con = null;
 
     static {

@@ -13,8 +13,10 @@ public class LoginDao {
             prest.setString(1, user);
             prest.setString(2, pass);
             ResultSet rs = prest.executeQuery();
-            if(rs.next())
+            if(rs.next()) {
+                ConnectionDB.user = rs.getString("NomUtilisateur");
                 return true;
+            }
         } catch(SQLException se) {
             se.printStackTrace();
         } 
